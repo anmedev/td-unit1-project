@@ -29,7 +29,7 @@ const quotes = [
   {quote: "Impossible is just an opinion.", source: "Paulo Coelho"},
 
   {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-  source: "Nelson Mandela"},
+  source: "Nelson Mandela"}
 ];
 
 // This function generates a random quote
@@ -38,7 +38,6 @@ const getRandomQuote = () => {
   return quotes[randomNumber];
 }
 
-// This function prints a random quote
 // This function prints a random quote
 const printQuote = () => {
   const randomQuote = getRandomQuote();
