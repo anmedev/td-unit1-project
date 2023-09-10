@@ -28,20 +28,20 @@ const getRandomQuote = () => {
 const printQuote = () => {
   const randomQuote = getRandomQuote();
     let html =
-    `<p class="quote">${randomQuote.quote}</p>
-     <p class="source">${randomQuote.source}`
+    `<p class="quote">${randomQuote.quote}</p>;
+     <p class="source">${randomQuote.source}`;
 
     if(randomQuote.citation) {
-      html += `<span class="citation">${randomQuote.citation}</span>`
+      html += `<span class="citation">${randomQuote.citation}</span>`;
     }
     if (randomQuote.year) {
-      html += `<span class="year">${randomQuote.year}</span>`
+      html += `<span class="year">${randomQuote.year}</span>`;
     }
     if (randomQuote.tags) {
-      html += `<span class="tags">${randomQuote.tags}</span>`
+      html += `<span class="tags">${randomQuote.tags}</span>`;
     }
 
-    html += `</p>`
+    html += `</p>`;
 
     // This function generates a random background color
     const getRandomColor = () => Math.floor(Math.random() * 256);
