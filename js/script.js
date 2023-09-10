@@ -42,7 +42,15 @@ const printQuote = () => {
     }
 
     html += `</p>`
+
+    // This function generates a random background color
+    const getRandomColor = () => Math.floor(Math.random() * 256);
+    let randomRGB = `rgb( ${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+    html += `<div style="background-color: ${randomRGB}"></div>`;
+
+    document.body.style.background = randomRGB;
     document.getElementById('quote-box').innerHTML = html;
+
 }
 
 /***
