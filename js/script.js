@@ -53,7 +53,7 @@ const printQuote = () => {
 
 }
 
-/*This function auto-refreshes the quotes every 10 seconds*/
+// This function auto-refreshes the quotes every 10 seconds
 setInterval(printQuote, 10000);
 
 /***
