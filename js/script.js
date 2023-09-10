@@ -53,6 +53,9 @@ const printQuote = () => {
 
 }
 
+/*This function auto-refreshes the quotes every 10 seconds*/
+setInterval(printQuote, 10000);
+
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
