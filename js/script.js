@@ -10,12 +10,12 @@ project 1 - A Random Quote Generator
 
 //  This creates my array of objects named quotes
 const quotes = [
-  {quote: "A rose by any other name would smell as sweet.", source: "William Shakespeare", citation: "Romeo and Juliet"},
-  {quote: "Life is like a box of chocolates. You never know what you're going to get.", source: "Forrest Gump", year: 1994},
+  {quote: "A rose by any other name would smell as sweet.", source: "William Shakespeare", citation: "Romeo and Juliet", tags: ", #play"},
+  {quote: "Life is like a box of chocolates. You never know what you're going to get.", source: "Forrest Gump", year: 1994, tags: ", #film"},
   {quote: "You will face many defeats in life, but never let yourself be defeated.", source: "Maya Angelou"},
   {quote: "Never let the fear of striking out keep you from playing the game.", source: "Babe Ruth"},
   {quote: "Impossible is just an opinion.", source: "Paulo Coelho"},
-  {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.", source: "Nelson Mandela", tags: ", #inspirational"},
+  {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.", source: "Nelson Mandela"},
 ];
 
 // This function generates a random quote
