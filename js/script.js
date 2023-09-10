@@ -52,12 +52,11 @@ const printQuote = () => {
     document.getElementById('quote-box').innerHTML = html;
 }
 
-// This function auto-refreshes the quotes every 10 seconds
+// This function auto-refreshes the quotes page every 10 seconds
 setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
-
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
