@@ -10,12 +10,26 @@ project 1 - A Random Quote Generator
 
 //  This creates my array of objects named quotes
 const quotes = [
-  {quote: "A rose by any other name would smell as sweet.", source: "William Shakespeare", citation: "Romeo and Juliet", tags: ", #play"},
-  {quote: "Life is like a box of chocolates. You never know what you're going to get.", source: "Forrest Gump", year: 1994, tags: ", #film"},
-  {quote: "You will face many defeats in life, but never let yourself be defeated.", source: "Maya Angelou"},
-  {quote: "Never let the fear of striking out keep you from playing the game.", source: "Babe Ruth"},
+  {quote: "A rose by any other name would smell as sweet.",
+  source: "William Shakespeare",
+  citation: "Romeo and Juliet",
+  tags: ", #play"},
+
+  {quote: "Life is like a box of chocolates. You never know what you're going to get.",
+  source: "Forrest Gump",
+  year: 1994,
+  tags: ", #film"},
+
+  {quote: "You will face many defeats in life, but never let yourself be defeated.",
+  source: "Maya Angelou"},
+
+  {quote: "Never let the fear of striking out keep you from playing the game.",
+  source: "Babe Ruth"},
+
   {quote: "Impossible is just an opinion.", source: "Paulo Coelho"},
-  {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.", source: "Nelson Mandela"},
+
+  {quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+  source: "Nelson Mandela"},
 ];
 
 // This function generates a random quote
@@ -24,6 +38,7 @@ const getRandomQuote = () => {
   return quotes[randomNumber];
 }
 
+// This function prints a random quote
 // This function prints a random quote
 const printQuote = () => {
   const randomQuote = getRandomQuote();
@@ -42,14 +57,12 @@ const printQuote = () => {
     }
 
     html += `</p>`;
+    document.getElementById('quote-box').innerHTML = html;
 
 // This function generates a random background color
     const getRandomColor = () => Math.floor(Math.random() * 256);
     let randomRGB = `rgb( ${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
-    html += `<div style="background-color: ${randomRGB}"></div>`;
-
     document.body.style.background = randomRGB;
-    document.getElementById('quote-box').innerHTML = html;
 }
 
 // This function auto-refreshes the quotes page every 10 seconds
