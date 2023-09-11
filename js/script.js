@@ -60,7 +60,7 @@ const printQuote = () => {
 
 // This function generates a random background color
     const getRandomColor = () => Math.floor(Math.random() * 256);
-    let randomRGB = `rgb( ${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+    let randomRGB = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
     document.body.style.background = randomRGB;
 }
 
