@@ -8,7 +8,7 @@ project 1 - A Random Quote Generator
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 
-//  This creates my array of objects named quotes
+//  This creates an array of objects named quotes
 const quotes = [
   {quote: "A rose by any other name would smell as sweet.",
   source: "William Shakespeare",
