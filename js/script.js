@@ -45,7 +45,7 @@ const printQuote = () => {
     `<p class="quote">${randomQuote.quote}</p>
      <p class="source">${randomQuote.source}`
 
-    if(randomQuote.citation) {
+    if (randomQuote.citation) {
       html += `<span class="citation">${randomQuote.citation}</span>`
     }
     if (randomQuote.year) {
